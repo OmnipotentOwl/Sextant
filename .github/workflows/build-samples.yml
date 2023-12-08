@@ -59,7 +59,6 @@ jobs:
         dotnet workload install macos
         dotnet workload install maui
         dotnet tool install -g Redth.Net.Maui.Check
-        maui-check --non-interactive --fix
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
