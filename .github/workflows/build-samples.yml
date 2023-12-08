@@ -42,7 +42,7 @@ jobs:
         lfs: true
 
     # Install the .NET workload
-    - name: Install .NET 6
+    - name: Setup .NET 6/7/8
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: |
