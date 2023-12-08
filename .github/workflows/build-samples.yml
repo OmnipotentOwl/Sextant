@@ -35,6 +35,12 @@ jobs:
         $process.Start()
         $process.WaitForExit()
 
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4.0.0
+      with:
+        distribution: 'microsoft'
+        java-version: '11'
+
     - name: Checkout
       uses: actions/checkout@v2
       with:
